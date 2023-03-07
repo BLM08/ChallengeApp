@@ -2,11 +2,11 @@
 
 string name = "Michał";
 string sex = "Mężczyzna";           
-var age = "23";
+int age = 23;
 
 Console.WriteLine("Imię :" + name);
 Console.WriteLine("Płeć :" + sex);
-Console.WriteLine("Wiek :" + age + "lata");
+Console.WriteLine("Wiek :" + age + " lata");
 
 if (age < 50)
 {
