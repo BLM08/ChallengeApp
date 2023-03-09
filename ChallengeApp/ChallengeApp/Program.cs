@@ -1,25 +1,25 @@
 ﻿//Zadanie domowe dzień 4
 
 string name = "Michał";
-string sex = "Mężczyzna";           
+string gender = "Mężczyzna";           
 int age = 23;
 
 Console.WriteLine("Imię :" + name);
-Console.WriteLine("Płeć :" + sex);
+Console.WriteLine("Płeć :" + gender);
 Console.WriteLine("Wiek :" + age + " lata");
 
 if (age < 50)
 {
-    if (name == "Michał" && age < 30)
+    if (gender == "Mężczyzna" && age < 30)
     {
         Console.WriteLine("Mężczyzna poniżej 30 roku życia");
     }
-    else if(sex == "Mężczyzna" || age < 30)
+    else if(name == "Michał" || age < 30)
     {
-        Console.WriteLine("Michał , lat 23");
+        Console.WriteLine("Michał , 23 lata");
     }
 }
-else if(age < 30 && sex == "Mężczyzna")
+else if(age < 18 && sex == "Mężczyzna")
 {
     Console.WriteLine("Niepełnoletni mężczyzna");
 }    
