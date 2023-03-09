@@ -1,25 +1,17 @@
-﻿//Zadanie domowe dzień 4
+﻿Console.WriteLine("podaj liczbę: ");
+string number = Console.ReadLine();
+char[] letters = number.ToArray();
 
-string name = "Michał";
-string sex = "Mężczyzna";           
-int age = 23;
-
-Console.WriteLine("Imię :" + name);
-Console.WriteLine("Płeć :" + sex);
-Console.WriteLine("Wiek :" + age + " lata");
-
-if (age < 50)
+for (int i = 0; i < 10; i++)
 {
-    if (name == "Michał" && age < 30)
+    var result = 0;
+    foreach (char letter in letters)
     {
-        Console.WriteLine("Mężczyzna poniżej 30 roku życia");
+        int charToNumber = letter - '0';
+        if (charToNumber == i)
+        {
+            result++; 
+        }
     }
-    else if(sex == "Mężczyzna" || age < 30)
-    {
-        Console.WriteLine("Michał , lat 23");
-    }
+    Console.WriteLine("W liczbie: " + number + "cyfra " + i + "występuje " + result + "razy.");
 }
-else if(age < 30 && sex == "Mężczyzna")
-{
-    Console.WriteLine("Niepełnoletni mężczyzna");
-}    
