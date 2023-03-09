@@ -1,24 +1,17 @@
-String name = "Michał";
-string gender = "Mężczyzna";           
-int age = 23;
+Console.WriteLine("podaj liczbę: ");
+string number = Console.ReadLine();
+char[] letters = number.ToArray();
 
-Console.WriteLine("Imię :" + name);
-Console.WriteLine("Płeć :" + gender);
-Console.WriteLine("Wiek :" + age + " lata");
-
-if (age < 50)
+for (int i = 0; i < 10; i++)
 {
-    if (gender == "Mężczyzna" && age < 30)
+    var result = 0;
+    foreach (char letter in letters)
     {
-        Console.WriteLine("Mężczyzna poniżej 30 roku życia");
+        int charToNumber = letter - '0';
+        if (charToNumber == i)
+        {
+            result++; 
+        }
     }
-    else if(name == "Michał" || age < 30)
-    {
-        Console.WriteLine("Michał , 23 lata");
-    }
+    Console.WriteLine("W liczbie: " + number + "cyfra " + i + "występuje " + result + "razy.");
 }
-else if(age < 18 && gender == "Mężczyzna")
-{
-    Console.WriteLine("Niepełnoletni mężczyzna");
-}    
-
