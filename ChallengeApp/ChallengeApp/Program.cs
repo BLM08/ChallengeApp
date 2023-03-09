@@ -19,7 +19,7 @@ if (age < 50)
         Console.WriteLine("Michał , 23 lata");
     }
 }
-else if(age < 18 && sex == "Mężczyzna")
+else if(age < 18 && gender == "Mężczyzna")
 {
     Console.WriteLine("Niepełnoletni mężczyzna");
 }    
